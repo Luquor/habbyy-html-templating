@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="./static/styles/main.css">
+
+    <title>habbyy-html-templating</title>
+</head>
+<body>
+    
+    <h1>habbyy-html-templating</h1>
+    <button onclick="changeTheme('black')">black</button>
+    <button onclick="changeTheme('default')">default</button>
+    <button onclick="changeTheme('blue')">blue</button>
+
+    <script>
+        function changeTheme(theme) {
+            console.log(`Changing theme to ${theme}`);
+            var link = document.querySelector('link[rel="stylesheet"]');
+            console.log(`Link element:`, link);
+            link.href = `./static/themes/${theme}.css`;
+        }
+    </script>
+</body>
+</html>
