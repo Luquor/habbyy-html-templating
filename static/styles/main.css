@@ -1,0 +1,9 @@
+/* Import the themes */
+@import url("../themes/default.css");
+@import url("../themes/black.css");
+@import url("../themes/blue.css");
+
+body {
+    background-color: var(--bg-color);
+    color: var(--text-color);
+}
