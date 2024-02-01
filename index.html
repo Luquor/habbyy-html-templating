@@ -11,6 +11,8 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
 
+    <script src="./static/javascript/themes.js"></script>
+
     <title>habbyy-html-templating</title>
 </head>
 <body>
@@ -22,13 +24,5 @@
     <button onclick="changeTheme('blue')">blue</button>
     <button onclick="changeTheme('green')">botanical</button>
 
-    <script>
-        function changeTheme(theme) {
-            console.log(`Changing theme to ${theme}`);
-            var link = document.querySelector('link[rel="stylesheet"]');
-            console.log(`Link element:`, link);
-            link.href = `./static/themes/${theme}.css`;
-        }
-    </script>
 </body>
 </html>
