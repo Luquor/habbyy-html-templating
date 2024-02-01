@@ -22,21 +22,50 @@
     <button onclick="changeTheme('black')">black</button>
     <button onclick="changeTheme('default')">default</button>
     <button onclick="changeTheme('green')">botanical</button>
+    <button onclick="changeTheme('iv_clover')">iv_clover</button>
     
     <h3>habits cards</h3>
     <div class="habits-card">
+        <div class="habits-card-info">
         <h2>header</h2>
-        <p>description</p>
+        <p>descriptiondescriptiondescriptiondescriptiondescriptiondescriptiondescriptiondescriptiondescription</p>
+        <button class="habits-button">done</button>
+        </div>
         <div class="habits-calendar">
             <ul>
-                <li>Mon</li>
-                <li>Tue</li>
-                <li>Wed</li>
+                <li class="habits-done">Mon</li>
+                <li class="habits-failed">Tue</li>
+                <li class="habits-upcoming">Wed</li>
                 <li>Thu</li>
                 <li>Fri</li>
             </ul>
         </div>
     </div>
 
+    <h3>forms</h3>
+    <form action="" class="habits-form">
+        <label for="text">name</label>
+        <input type="text" name="habit-name" id="habit-name">
+        <label for="text">description</label>
+        <input type="text" name="habit-description" id="habit-description">
+        <h4 for="text">frequency</h4>
+        <div class="form-frequency">
+            <label for="text">Monday</label>
+            <input type="checkbox" name="habit-frequency-" id="habit-frequency">
+            <label for="text">Tuesday</label>
+            <input type="checkbox" name="habit-frequency-" id="habit-frequency">
+            <label for="text">Wednesday</label>
+            <input type="checkbox" name="habit-frequency-" id="habit-frequency">
+            <label for="text">Thursday</label>
+            <input type="checkbox" name="habit-frequency-" id="habit-frequency">
+            <label for="text">Friday</label>
+            <input type="checkbox" name="habit-frequency-" id="habit-frequency">
+            <label for="text">Saturday</label>
+            <input type="checkbox" name="habit-frequency-" id="habit-frequency">
+            <label for="text">Sunday</label>
+            <input type="checkbox" name="habit-frequency-" id="habit-frequency">
+        </div>
+        <button class="habits-button">submit</button>
+    </form>
 </body>
 </html>

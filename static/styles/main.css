@@ -34,6 +34,7 @@ button:hover  {
 }
 
 .habits-card {
+    display: flex;
     margin: 2px 0;
     padding: 0.5em 1em;
     width: 35em;
@@ -41,10 +42,80 @@ button:hover  {
     background-color: var(--sub-alt-color);
 }
 
-.habits-card h2 {
+.habits-card-info p {
+    margin-bottom: 1em;
+}
+
+.habits-calendar ul {
+    display: flex;
+    list-style: none;
+    justify-content: space-between;
+}
+
+.habits-calendar li {
+    margin: 5px;
+    padding: 0.5em 1em;
+    border-radius: 5px;
+    font-weight: 600;
+    font-size: medium;
+    background-color: var(--caret-color);
+}
+
+.habits-calendar .habits-done {
+    background-color: var(--sub-alt-color);
+}
+
+.habits-calendar .habits-failed {
+    background-color: var(--error-color);
+}
+
+.habits-calendar .habits-upcoming {
+    background-color: var(--text-color);
+    color: var(--bg-color);
+}
+
+.habits-button {
+    background-color: var(--text-color);
+    color: var(--sub-alt-color);
+}
+
+.habits-form {
+    display: flex;
+    flex-direction: column;
+    margin: 2px 0;
+    padding: 0.5em 1em;
+    width: 35em;
+    border-radius: 5px;
+    background-color: var(--sub-alt-color);
+}
+
+.habits-form label {
+    font-weight: 600;
+}
+
+.habits-form input {
+    margin: 5px 0 10px 0;
+    padding: 0.5em 1em;
+    border: none;
+    border: solid 2px transparent;
+    border-radius: 5px;
+    background-color: var(--caret-color);
     color: var(--text-color);
 }
 
-.habits-card h3 {
-    color: var(--sub-color);
+.habits-form input:focus {
+    outline: none;
+    border: solid 2px var(--main-color);
+}
+
+.habits-form .form-frequency {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin: 5px 0 10px 0;
+}
+
+.habits-form button {
+    width: 25%;
 }
